@@ -1,0 +1,368 @@
+@font-face {
+    font-family: "JF Flat Regular";
+    src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?#iefix) format('embedded-opentype'),
+        url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+        url(../fonts/JF-Flat-regular.woff) format('woff'),
+        url(../fonts/JF-Flat-regular.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal
+}
+
+body {
+    font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.429;
+}
+
+/*تنسيقات الشريط العلوي*/
+.custom-navbar .container .navbar-brand {
+    color: #000;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+
+
+.custom-navbar {
+    border-bottom: 1px solid #000;
+    width: 100%;
+    background-color: #EEF0EA;
+
+}
+
+.custom-navbar .container {
+    padding: 0;
+}
+
+.coffe {
+    color: #303030;
+}
+
+.custom-navbar .navbar-nav li a.nav-link {
+    color: #000;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.custom-navbar .navbar-nav a.nav-link:hover {
+    color: #000;
+}
+
+
+.custom-navbar .navbar-nav li.active:hover a.nav-link {
+    background-color: #e7e7e7;
+}
+
+.custom-navbar a.btn-icons {
+    padding: 5px 10px 4px;
+    color: #000;
+    border: 1px solid #000;
+    background-color: transparent;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.custom-navbar .btn-icons:hover {
+    color: #000000;
+    background-color: #e2e1e1;
+}
+
+.custom-navbar .navbar-nav li:last-of-type {
+    margin-top: 8px;
+}
+
+/*تنسيقات جسم الصفحة*/
+
+
+#carousel-featured {
+    background-color: #fff;
+    height: 600px;
+    padding-top: 15px;
+}
+
+#carousel-featured .carousel-item img {
+    height: 500px;
+    width: 100%;
+}
+
+#store-features {
+    box-shadow: 0 0 15px #EEF0EA;
+    position: relative;
+    top: -60px;
+    background-color: #fff;
+    padding-bottom: 35px;
+    padding-top: 25px;
+}
+
+#store-features .feature+.feature {
+    border-right: 1px solid #EEF0EA;
+}
+
+h1.custom-heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.custom-thumbnail {
+    border: 2px solid #EEF0EA;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.custom-thumbnail:hover {
+    border-color: #5d6263;
+}
+
+.custom-thumbnail h4 {
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.custom-thumbnail img {
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(83, 204, 215, .5);
+    height: 200px;
+    width: calc(100% - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*تنسيقات ذيل الصفحة*/
+#footer-nav {
+    background-color: #EEF0EA;
+    padding: 50px 0 40px;
+
+}
+
+
+#footer-nav form {
+    max-width: 260px;
+    margin: auto;
+}
+
+
+#footer-nav form label {
+    margin: 27px 0 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555555;
+}
+
+#newsletter form input {
+    background-color: #fff;
+    height: 38px;
+    box-shadow: none;
+    border: #5d6263;
+}
+
+input[type=email], input[type="number"] {
+    direction: rtl;
+    text-align: right;
+}
+
+#newsletter form button {
+    border-radius: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 14px;
+    padding: 6px 12px 5px;
+    height: 38px;
+}
+
+#footer-copyright {
+    border-top: 1px solid #9c9c9c;
+    background-color: #EEF0EA;
+    color: #303030;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+
+#footer-copyright #social-icons a {
+    color: #303030;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    .custom-navbar {
+        padding: 15px 20px 30px;
+    }
+
+    .custom-navbar .container {
+        max-width: 100%;
+    }
+
+    .navbar-header {
+        display: block;
+        width: 100%;
+    }
+
+    .navbar-header .btn-icons, .btn-icons-collapsed {
+        float: left;
+    }
+
+    #copyright, #social-icons {
+        width: 100%;
+        text-align: center;
+    }
+
+    #social-icons {
+        font-size: 150%;
+        margin-top: 10px;
+
+    }
+
+    #carousel-product-images .carousel-indicators-primary {
+        display: none;
+
+
+    }
+
+    #carousel-product-images .carousel-item img {
+        height: 250px;
+        border: 1px solid #000;
+        width: 15%;
+
+    }
+
+    #form-product-selection p.product-desecription{
+        font-size: 14px;
+    }
+
+
+}
+
+/*product.html*/
+/*المسار العلوي*/
+.custom-breadcrumb {
+    background-color: transparent;
+    padding: 25px 0;
+}
+
+.custom-breadcrumb a {
+    color: #555555;
+    text-decoration: none;
+}
+
+.custom-breadcrumb a:hover {
+    color: #f84747;
+}
+
+.custom-breadcrumb>li+li:before {
+    content: '>';
+    color: #555555;
+    padding: 0 5px;
+}
+
+.custom-breadcrumb .active {
+    color: #bfbfbf;
+}
+
+#carousel-product-images .carousel-indicators-primary {
+    position: relative;
+    top: -40px;
+    height: 60px;
+    width: 10%;
+    right: 20%;
+
+
+}
+
+#carousel-product-images .carousel-item img {
+    width: 80%;
+    height: 300px;
+    border: 1px solid #000;
+
+}
+
+.product-category {
+    color: #A9A9A9;
+    font-size: 22px;
+}
+
+#form-product-selection p {
+    font-size: 18px;
+    margin: 18px 0 18px;
+}
+
+
+.product-quantity select {
+
+    padding: 6px 12px;
+    margin-right: 3px;
+    box-shadow: none;
+
+}
+
+.product-quantity .label {
+    padding-top: 10px;
+}
+
+.product-quantity {
+    padding-bottom: 20px;
+}
+
+.add-to-cart-btn {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+}
+
+/*content.html*/
+#map {
+    padding: 0;
+}
+
+#contact-options h4 {
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+
+#contact-options .heading-with-border-bottom {
+    margin-bottom: 30px;
+}
+
+#contact-info {
+    margin-bottom: 25px;
+}
+
+#contact-info .fa-lg {
+    color: #f84747;
+    font-size: 18px;
+    margin: 10px;
+    width: 25px;
+    text-align: center;
+}
+
+#contact-options textarea {
+    height: 128px !important;
+}
+
+#contact-options {
+    margin-bottom: 25px;
+}
